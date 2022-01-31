@@ -16,6 +16,14 @@ public class ParameterService {
         parameterDaoJpa.save(parameter);
     }
 
+    public void deleteParameter(Long id) {
+        parameterDaoJpa.deleteById(id);
+    }
+
+    public Parameter updateParameter(Parameter parameter) {
+        return parameterDaoJpa.save(parameter);
+    }
+
     public List<Parameter> getParameters() {
         return parameterDaoJpa.findAll();
     }
