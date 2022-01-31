@@ -1,7 +1,7 @@
 package com.project.wop.service;
 
 import com.project.wop.dao.ParameterDaoJpa;
-import com.project.wop.domain.Parameter;
+import com.project.wop.domain.entity.Parameter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
