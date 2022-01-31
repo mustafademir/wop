@@ -12,7 +12,7 @@
     <artifactId>wop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>wop</name>
-    <description>wop</description>
+    <description>Wizard of Parameters</description>
     <properties>
         <java.version>11</java.version>
     </properties>
