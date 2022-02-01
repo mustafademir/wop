@@ -12,8 +12,8 @@ import java.util.List;
 public class ParameterService {
     private final ParameterDaoJpa parameterDaoJpa;
 
-    public void addParameter(Parameter parameter) {
-        parameterDaoJpa.save(parameter);
+    public Parameter addParameter(Parameter parameter) {
+        return parameterDaoJpa.save(parameter);
     }
 
     public void deleteParameter(Long id) {

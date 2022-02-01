@@ -18,9 +18,8 @@ public class ParameterController {
     private final ParameterMapper parameterMapper;
 
     @PostMapping
-    public ResponseEntity<Boolean> createParameter(@RequestBody ParameterDto parameterDto) {
-        parameterService.addParameter(parameterMapper.parameterDtoToParameter(parameterDto));
-        return ResponseEntity.ok(Boolean.TRUE);
+    public ResponseEntity<ParameterDto> createParameter(@RequestBody ParameterDto parameterDto) {
+        return ResponseEntity.ok(parameterMapper.parameterToParameterDto(parameterService.addParameter(parameterMapper.parameterDtoToParameter(parameterDto))));
     }
 
     @GetMapping(value = "/all")
