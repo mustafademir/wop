@@ -1,20 +1,19 @@
 package com.project.wop.domain.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+import javax.persistence.*;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-public class Parameter {
+public class Parameter extends AbstractEntity {
 
-    @Id
-    @GeneratedValue
-    private Long id;
-
+    @Column
     private String key;
 
+    @Column
     private String value;
 }
